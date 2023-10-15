@@ -1,0 +1,6 @@
+정부 : http://localhost/government/GovernmentMain.php
+모더나 : http://localhost/moderna/moderna_main.php
+화이자 : http://localhost/pfizer/pfizer_main.php
+대구병원 : http://localhost/dgh/dgh.php
+영남대병원 : http://localhost/yuh/yuh.php
+경북대병원 : http://localhost/kuh/kuh.php

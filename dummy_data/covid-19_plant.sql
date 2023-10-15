@@ -1,0 +1,56 @@
+CREATE DATABASE  IF NOT EXISTS `covid-19` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `covid-19`;
+-- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+--
+-- Host: localhost    Database: covid-19
+-- ------------------------------------------------------
+-- Server version	8.0.22
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `plant`
+--
+
+DROP TABLE IF EXISTS `plant`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `plant` (
+  `plant code` varchar(20) NOT NULL,
+  `address` varchar(45) NOT NULL,
+  `phone` varchar(45) NOT NULL,
+  `daily production capacity` int NOT NULL,
+  `company` varchar(10) NOT NULL,
+  PRIMARY KEY (`plant code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `plant`
+--
+
+LOCK TABLES `plant` WRITE;
+/*!40000 ALTER TABLE `plant` DISABLE KEYS */;
+INSERT INTO `plant` VALUES ('092304A','전남','061-546-2223',10000,'화이자'),('124678FF','경북','053-885-5667',10000,'모더나'),('135QWQF','경북','053-885-5117',10000,'화이자'),('215WQERF','충남','041-982-6663',10000,'모더나'),('3215SSD','강원도','033-956-7789',10000,'화이자'),('341ABCS','경북','053-885-5666',10000,'모더나'),('521FASDF','대구','053-885-5327',10000,'모더나'),('52DSF24','경북','053-885-5267',10000,'모더나'),('5512FFDD','경기도','031-235-7777',10000,'화이자'),('82231D','충남','041-998-4451',10000,'화이자'),('8837QSS','경남','055-165-8795',10000,'화이자'),('8847GHK','전북','063-898-1112',10000,'모더나'),('88FDQW77','충북','043-889-1123',10000,'모더나'),('FG3422','경북','053-885-5621',10000,'모더나'),('JRGHJ23','경북','053-885-5631',10000,'화이자'),('KKUY52','전남','061-441-2222',10000,'화이자');
+/*!40000 ALTER TABLE `plant` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-12-01 11:28:21
